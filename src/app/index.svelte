@@ -8,4 +8,4 @@
   }
 </style>
 
-<h1 class="h1">Hello world! {name}</h1>
+<h1 class="h1">Hello world!</h1>

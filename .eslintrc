@@ -1,0 +1,22 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+  },
+  "plugins": ["svelte3"],
+  "overrides": [
+    {
+      "files": ["**/*.svelte"],
+      "processor": "svelte3/svelte3"
+    }
+  ],
+  "rules": {
+    "space-before-function-paren": ["error", "never"],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
+  },
+}
