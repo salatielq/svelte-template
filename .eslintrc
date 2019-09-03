@@ -1,4 +1,5 @@
 {
+  "extends": "standard",
   "parserOptions": {
     "ecmaVersion": 2019,
     "sourceType": "module"
@@ -8,15 +9,19 @@
     "browser": true,
   },
   "plugins": ["svelte3"],
+  "rules": {
+    "space-before-function-paren": ["error", "never"],
+  },
   "overrides": [
     {
       "files": ["**/*.svelte"],
-      "processor": "svelte3/svelte3"
+      "processor": "svelte3/svelte3",
+      "rules": {
+        "import/imports-first": "off",
+        "import/no-unresolved": "off",
+        "import/no-mutable-exports": "off",
+        "import/no-duplicates": "off",
+      }
     }
   ],
-  "rules": {
-    "space-before-function-paren": ["error", "never"],
-    "no-console": ["error", { "allow": ["warn", "error"] }],
-    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
-  },
 }
