@@ -7,10 +7,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.js",
-    "build": "webpack --mode production --config webpack.config.js",
+    "build": "webpack --mode development --config webpack.config.js",
     "lint": "eslint --ext js,svelte ."
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.2.2",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",

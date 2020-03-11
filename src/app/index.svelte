@@ -1,5 +1,9 @@
 <script>
-  export let name
+  const newVarName = 'Salatiel'
+
+  const a = () => console.log('a')
+  
+  console.log(newVarName, a)
 </script>
 
 <style>
@@ -8,4 +12,4 @@
   }
 </style>
 
-<h1 class="h1">Hello world!</h1>
+<h1 class="h1">Hello world! {newVarName}</h1>
